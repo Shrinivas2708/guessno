@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess  Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess  Number!</h1>
+      <!-- <p class="between">(Between 1 and 20)</p> -->
+      <button class="btn-1 rules show-modal">Rules</button>
+      <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1 class="modal-h1">How to play ?</h1>
+      <p class="main-p">
+        <h2>1] You need to decide a number from 1 to 20 and add it into the empty block .</h2> 
+      <h2> 2] Then hit 'Enter' or click 'Check !'</h2>
+      <h2>3] You will see a result if it is 'Too high '  or  'Too less' then then again guess</h2>
+      <h2>4] If you guess wrong 1 point is subtracted from score when you reach 0 . YOU LOOSE . </h2>
+      <h2>5] If you want to play again then hit 'Again' DON'T REFRESH !</h2>
+      <h2>6] If any error is there then mail me 'sasherikar3105@gmail.com'</h2>
+      </p>
+    </div>
+         
+      <div class="number">?</div>
+    </header>
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+        <button class="btn again">Again!</button>
+      </section>
+      <section class="mid">⠀</section>
+      <section class="right">
+        <p class="message">Start guessing...</p>
+        <p class="label-score">💯 Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p>
+        <div class="overlay hidden "></div>
+      </section>
+    </main>
+    <p class="between">(Between 1 to 20)</p>
+    <script src="script.js"></script>
+  </body>
+</html>
